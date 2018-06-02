@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_date_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/monday" />
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/tuesday" />
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/wednesday" />
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/thursday" />
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/friday" />
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/saturday" />
+
+        <TextView
+            style="@style/DatePickerTitle"
+            android:text="@string/sunday" />
+
+    </LinearLayout>
+
+    <com.zixiao.datepicker.DatePickerView
+        android:id="@+id/dpv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
